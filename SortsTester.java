@@ -1,11 +1,11 @@
 import java.util.Random;
 import java.util.Arrays;
 
-public class CyeresesSortsTester {
+public class SortsTester {
 
 	private int[][] testCases, sortedTestCases;
 
-	CyeresesSortsTester() {
+	SortsTester() {
 		testCases = generateTestCases();
 
 		//I am using the ArrayList sort function here just for testing
@@ -142,17 +142,14 @@ public class CyeresesSortsTester {
 
 	public static void main(String[] args) {
 
-		CyeresesSortsTester isYouEpicSorterLlamaTester = new CyeresesSortsTester();
+		SortsTester tester = new SortsTester();
 
-		System.out.println("\n// I will determine if you is an Epic Sorter Llama...\n");
+		boolean isPassed = tester.daUltimateTester();
 
-		boolean isYouEpicSorterLlama = isYouEpicSorterLlamaTester.daUltimateTester();
-
-		System.out.println("\n// My ultimate consensus...\n");
-		if (isYouEpicSorterLlama) {
-			System.out.println("boolean isYouEpicSorterLlama = true;");
+		if (isPassed) {
+			System.out.println("all tests passed = true;");
 		} else {
-			System.out.println("boolean isYouEpicSorterLlama = false;");
+			System.out.println("all tests passed = false;");
 		}
 
 	}
