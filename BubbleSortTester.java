@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class CustomSortTester extends Sorts{
+public class BubbleSortTester extends Sorts{
   public static void main(String[] args){
 
     /*
